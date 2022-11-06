@@ -1,0 +1,636 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  width: 100vw;
+  height: 800px;
+  background-image: url(../assets/hero-bg.png);
+}
+
+.hero__logo {
+  margin-top: 24px;
+  margin-bottom: 180px;
+}
+
+.hero__texto {
+  margin-bottom: 64px;
+}
+
+.hero__btn {
+  justify-content: center;
+  gap: 44px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #ffffff;
+  padding: 16px 64px;
+}
+
+.btn h4 {
+  margin: 0;
+}
+
+.btn__1 {
+  color: #ffffff;
+  background: rgba(177, 30, 158, 0.5);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 34.5px;
+
+  transition: all ease-in-out 250ms;
+}
+.btn__1:hover {
+  color: #ffffff;
+  background: rgba(255, 52, 228, 0.5);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 34.5px;
+
+  /* transform: scale(105%); */
+
+  transition: all ease-in-out 250ms;
+}
+
+.btn__2 {
+  color: #ffffff;
+  background: rgba(69, 58, 154, 0.5);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 34.5px;
+
+  transition: all ease-in-out 250ms;
+}
+
+.btn__2:hover {
+  color: #ffffff;
+  background: rgba(112, 94, 247, 0.5);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 34.5px;
+
+  /* transform: scale(105%); */
+
+  transition: all ease-in-out 250ms;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: #e9e9e9;
+  width: 100vw;
+  min-height: 1000px;
+}
+
+.about__titulo h2 {
+  margin-top: 48px;
+  margin-bottom: 100px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+
+  color: #221d4f;
+}
+
+.about__card {
+  background: #ffffff;
+  border-radius: 50px;
+  margin-bottom: 64px;
+  font-weight: 600;
+  color: #444;
+}
+
+.about__card img {
+  padding: 32px 16px;
+}
+
+.about__card p {
+  padding: 16px 16px;
+  margin: 0 auto;
+  /* text-align: center; */
+  width: 80%;
+}
+.about__card ul {
+  list-style: square;
+}
+.about__card ul li {
+  padding: 16px 16px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+/* BENEFICIOS */
+
+.beneficios {
+  background-color: #221d4f;
+  width: 100vw;
+  height: 1000px;
+}
+
+.beneficios__conteudo {
+  margin-top: 64px;
+}
+
+.beneficios__conteudo h2 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+
+  color: #ffffff;
+}
+.beneficios__conteudo span {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 73px;
+
+  color: #ffffff;
+}
+.beneficios__conteudo P {
+  color: #ffffff;
+  max-width: 80%;
+  margin-bottom: 64px;
+}
+
+.beneficios__lista img {
+  width: 32px;
+  height: 32px;
+}
+
+.beneficios__lista ul {
+  padding: 0;
+}
+
+.beneficios__lista ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.beneficios__lista span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screem and (min-width: 992px) {
+  .beneficios__img {
+    display: none;
+  }
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+
+  color: #221d4f;
+}
+
+.form__card {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+
+.preco-antigo {
+  font-size: 15px;
+  text-decoration: line-through;
+  color: #a6a6a6;
+  font-weight: 500;
+  padding-left: 40px;
+  margin-top: 32px;
+}
+
+.preco h3 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #ffffff;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+.preco span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.plano__Premium {
+  color: #ffffff;
+  padding-left: 40px;
+  margin-bottom: 64px;
+}
+.plano__Premium h4 {
+  font-size: 44px;
+}
+
+.form__card__lista {
+  color: #ffffff;
+}
+
+.form__card__lista ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.form__card__lista ul li img {
+  min-width: 20px;
+}
+.form__card__lista ul li p {
+  margin: 0;
+}
+
+.disclamer {
+  text-align: end;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.formulario {
+  margin-top: 64px;
+  color: #ffffff;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.formulario label span {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.formulario label input {
+  padding: 16px;
+  margin-bottom: 8px;
+  border: none;
+}
+
+.formulario p {
+  width: 80%;
+  padding: 16px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.formulario p a {
+  color: #bb6bd9;
+}
+
+.formulario button {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 64px;
+  border: none;
+  background-color: #bb6bd9;
+  padding: 16px 32px;
+  border-radius: 25px;
+}
+
+.rodape {
+  background-color: #6084ff;
+}
+
+.radape__logo {
+  max-width: 400px;
+  margin: 64px auto;
+}
+
+.direitos {
+  text-align: center;
+  background-color: #221d4f;
+  font-size: 12px;
+  color: #ffffff;
+}
+.direitos p {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .hero__logo {
+    max-width: 140px;
+  }
+
+  .hero__btn {
+    flex-direction: column;
+  }
+
+  .beneficios {
+    height: auto;
+  }
+
+  .beneficios__lista {
+    margin-bottom: 64px;
+  }
+  .beneficios__conteudo span {
+    line-height: inherit;
+  }
+  .beneficios__conteudo h2 {
+    margin-bottom: 16px;
+  }
+
+  .beneficios__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero__btn {
+    padding: 24px;
+  }
+  .hero__btn h4 {
+    font-size: 16px;
+  }
+
+  .about__card {
+    border-radius: 0;
+  }
+  .about__card p {
+    width: 100%;
+  }
+  .about__titulo h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .about__card img {
+    padding: 32px 64px;
+  }
+  .about__card ul {
+    padding-left: 0;
+  }
+  .beneficios__lista span {
+    font-size: 16px;
+  }
+  .beneficios__lista img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .form h2 {
+    font-size: 40px;
+  }
+
+  /* .preco-antigo h6 {
+    font-size: 10px;
+  } */
+  /* .preco h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 0px;
+    color: #ffffff;
+    padding-left: 40px;
+    margin-bottom: 16px;
+  } */
+  /* .form__card--esquerdo {
+    width: 100%;
+  } */
+  /* .plano__Premium h4 {
+    font-size: 24px;
+  } */
+  /* .plano__Premium {
+    color: #ffffff;
+    margin-bottom: 24px;
+  } */
+  /* .form__card__lista ul li p {
+    font-size: 12px;
+  } */
+  /* .disclamer {
+    font-size: 8px;
+  } */
+
+  /* .formulario label span {
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 8px;
+  } */
+  /* .formulario label input {
+    padding: 6px;
+    margin-bottom: 8px;
+  } */
+  /* .formulario p {
+    width: 80%;
+    padding: 8px;
+    margin: 0 auto;
+    font-size: 12px;
+  } */
+  /* .formulario button {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  } */
+  .radape__logo {
+    max-width: 200px;
+    margin: 32px auto;
+  }
+  .direitos p {
+    font-size: 8px;
+  }
+}
+
+/* .plano__free p {
+  color: #221d4f;
+} */
+
+.form__escolha {
+  margin-top: 32px;
+}
+
+.btn-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 16px;
+}
+.btn-box button {
+  border-radius: 25px;
+  min-width: 150px;
+  padding: 8px 0;
+}
+
+/* FORMS BOX */
+
+.form__left {
+  background-color: #221d4f;
+  color: #fff;
+  margin-top: 64px;
+  padding: 32px 24px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.preco-antigo {
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration-line: line-through;
+  color: #a6a6a6;
+}
+.preco-antigo h6 {
+  text-decoration: line-through;
+}
+.preco h3 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.plano__Premium {
+  margin-bottom: 44px;
+}
+
+.preco span {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.form__card__lista ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+.form__card__lista li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.disclamer {
+  text-align: right;
+}
+.disclamer p {
+  font-size: 10px;
+}
+
+.form__right {
+  background-color: #bbb9c6;
+  color: #fff;
+  margin-top: 64px;
+  padding: 64px 24px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+}
+.formulario label span {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.formulario label input {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulario button {
+  width: 80%;
+  align-self: center;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: #221d4f;
+  color: #fff;
+  margin: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#card1 {
+  margin-bottom: 64px;
+}
+#card2 {
+  margin-bottom: 64px;
+}
+
+.form__escolha {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+#card2 {
+  display: none;
+}
+
+#btn1 {
+  color: #fff;
+  background-color: #221d4f;
+}
+
+@media screen and (max-width: 992px) {
+  .form__left {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+  }
+  .form__right {
+    margin-top: 0;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .form__left {
+    border-radius: 0;
+  }
+  .form__right {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .btn-box {
+    flex-direction: column;
+  }
+
+  .preco-antigo h6 {
+    font-size: 12px;
+  }
+  .preco h3 {
+    font-size: 24px;
+  }
+  .plano__Premium h4 {
+    font-size: 24px;
+  }
+  .form__card__lista ul li p {
+    font-size: 12px;
+  }
+
+  .formulario label span {
+    font-size: 16px;
+  }
+  .formulario label input {
+    padding: 8px;
+  }
+  .formulario {
+    margin-top: 0;
+  }
+}
