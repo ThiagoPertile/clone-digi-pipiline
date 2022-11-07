@@ -13,6 +13,8 @@ body {
   width: 100vw;
   height: 800px;
   background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__logo {
