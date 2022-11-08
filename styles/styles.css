@@ -19,11 +19,12 @@ body {
 
 .hero__logo {
   margin-top: 24px;
-  margin-bottom: 180px;
+  margin-bottom: 240px;
+  height: 50px;
 }
 
 .hero__texto {
-  margin-bottom: 64px;
+  margin-bottom: 128px;
 }
 
 .hero__btn {
@@ -93,7 +94,7 @@ body {
 .about {
   background-color: #e9e9e9;
   width: 100vw;
-  min-height: 1000px;
+  /* min-height: 1000px; */
 }
 
 .about__titulo h2 {
@@ -113,9 +114,12 @@ body {
   font-weight: 600;
   color: #444;
 }
-
+.container ul {
+  padding-left: 0;
+}
 .about__card img {
   padding: 32px 16px;
+  max-width: 400px;
 }
 
 .about__card p {
@@ -288,7 +292,7 @@ body {
   margin-bottom: 8px;
 }
 .formulario label input {
-  padding: 16px;
+  padding: 10px;
   margin-bottom: 8px;
   border: none;
 }
@@ -334,7 +338,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .hero__logo {
-    max-width: 140px;
+    max-width: 300px;
   }
 
   .hero__btn {
@@ -363,7 +367,6 @@ body {
 @media screen and (max-width: 575px) {
   .hero__btn {
     padding: 24px;
-    gap: 16px;
   }
   .hero__btn h4 {
     font-size: 16px;
@@ -553,7 +556,7 @@ body {
 }
 .formulario label input {
   margin-bottom: 24px;
-  padding: 16px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
 }
@@ -565,7 +568,7 @@ body {
   border-radius: 5px;
   background-color: #221d4f;
   color: #fff;
-  margin: 64px;
+  margin: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -612,7 +615,6 @@ body {
   }
   .btn-box {
     flex-direction: column;
-    gap: 8px;
   }
 
   .preco-antigo h6 {
@@ -637,4 +639,28 @@ body {
   .formulario {
     margin-top: 0;
   }
+  .apoiadores img {
+    min-width: 250;
+  }
+}
+
+.apoiadores {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  color: #fff;
+}
+.apoiador {
+  padding: 24px;
+}
+.apoiadores h3 {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.apoiadores img {
+  max-width: 250px;
+}
+
+.apoiador--principal img {
+  max-width: 700px;
+  padding-bottom: 44px;
 }

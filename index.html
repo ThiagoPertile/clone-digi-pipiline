@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>digitaliza.ai|scape reports</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon-16x16.png">
-
     <meta property="og:title" content="digitaliza.ai|scape reports" />
-    <meta name="description" content="O mapa das principais soluções de Martech e Adtech
-    !" />
-    <meta property="og:image" content="assets\img-link.png" />
+    <meta property="og:description" content="O mapa das principais soluções de Martech e Adtech" />
 
+    <meta property="og:image" content="/assets/img-link.png" />
+    <meta property="og:image:secure_url" content="https://scape-report.digitaliza.ai/assets/logo-header.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -32,7 +33,7 @@
 
     <section class="hero">
         <div class="hero__conteudo container">
-            <img class="hero__logo img-fluid" src="assets/logo-header.png" alt="#">
+            <img class="hero__logo img-fluid rounded mx-auto d-block" src="assets/logo-header-h.svg" alt="#">
 
             <img src="assets/hero-logo.svg" alt="" class="hero__texto img-fluid rounded mx-auto d-block">
 
@@ -53,14 +54,15 @@
             </h2>
         </div>
         <div class="about__card container">
-            <img src="assets/card-quemSomos-pipeline.png" alt="" class="img-fluid rounded mx-auto d-block">
+            <img src="assets/card-quemSomos-pipeline.svg" alt="" class="img-fluid rounded mx-auto d-block">
             <p>Os Scapes são desenvolvidos desde 2018 com um time dedicado à pesquisa de novas empresas dentro do
                 ecossistema de tecnologia e inovação no País.</p>
             <p>A partir de um grande banco de dados, publicamos e compartilhamos estudos relevantes cobrindo vários
                 setores com o objetivo de difundir o conhecimento e gerar novos negócios.</p>
         </div>
-        <div class="about__card container">
-            <img src="assets/card-quemSomos-digitaliza.png" alt="" class="img-fluid rounded mx-auto d-block">
+        <div class="about__card container" style="margin-bottom: 16px;">
+            <img src="assets/card-quemSomos-digitaliza.svg" alt="" class="img-fluid rounded mx-auto d-block"
+                style="max-width: 350px;">
             <ul>
                 <li>Principal Marketplace de Soluções Digitais do Brasil</li>
                 <li>Investido pela StartSe, maior ecossistema de inovação do Brasil</li>
@@ -160,7 +162,7 @@
                 </div>
                 <div class="col-lg-5 col-md-12 form__right" style="background-color: #C7C6D0;">
                     <div class="formulario">
-                        <form action="https://api.sheetmonkey.io/form/cRGFQP8pGaGVp7jNQh7yLH" method="post">
+                        <form action="https://api.sheetmonkey.io/form/eQ2mxyxWxmj9yoqmFLxbzJ" method="post">
                             <label for="nome">
                                 <span>Nome</span>
                                 <input type="text" name="nome" required>
@@ -168,6 +170,14 @@
                             <label for="email">
                                 <span>Email</span>
                                 <input type="email" name="nome" required>
+                            </label>
+                            <label for="empresa">
+                                <span>Empresa</span>
+                                <input type="text" name="nome" required>
+                            </label>
+                            <label for="site">
+                                <span>Site</span>
+                                <input type="text" name="nome" required>
                             </label>
 
                             <p>Preencha seus dados para que nosso time entre em contato.
@@ -241,6 +251,14 @@
                                 <span>Email</span>
                                 <input type="email" name="nome" required>
                             </label>
+                            <label for="empresa">
+                                <span>Empresa</span>
+                                <input type="text" name="nome" required>
+                            </label>
+                            <label for="site">
+                                <span>Site</span>
+                                <input type="text" name="nome" required>
+                            </label>
 
                             <p>Preencha seus dados para que nosso time entre em contato.
                             </p>
@@ -258,8 +276,24 @@
     </section>
     <footer class="rodape">
         <div class="radape__logo"><img src="assets/hero-logo.svg" alt="" class="img-fluid"></div>
+        <div class="container">
+            <div class="row justify-content-around apoiadores">
+                <div class="col-md-12 apoiador apoiador--principal ">
+                    <h3>Desenvolvido por:</h3>
+                    <img src="assets/logo-header-h.svg" alt="">
+                </div>
+                <div class="col-md-12 apoiador">
+                    <h3>Strategic Business Partner:</h3>
+                    <img src="assets/logo-meioEMensagem.png" alt="">
+                </div>
+                <div class="col-md-12 apoiador">
+                    <h3>Institutional Supporter:</h3>
+                    <img src="assets/logo-iab.png" alt="" class="logo-iab">
+                </div>
+            </div>
+        </div>
         <div class="direitos">
-            <p>Direitos autorais © 2022 Digitaliza.ai. Todos os direitos reservados.</p>
+            <p>Direitos autorais © 2022 Digitaliza.ai|Pipeline. Todos os direitos reservados.</p>
         </div>
     </footer>
 
